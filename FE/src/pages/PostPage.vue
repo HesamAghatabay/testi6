@@ -1,5 +1,7 @@
 <template>
-  <q-page class="flex flex-center"> ss </q-page>
+  <q-page padding>
+    <!-- content -->
+  </q-page>
 </template>
 
 <script setup>
