@@ -1,11 +1,10 @@
 <template>
   <q-layout view="hHr lpR fFr">
-
     <q-header elevated class="bg-primary text-white" height-hint="98">
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
+            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
           </q-avatar>
           Title
         </q-toolbar-title>
@@ -14,9 +13,10 @@
       </q-toolbar>
 
       <q-tabs align="left">
-        <q-route-tab to="/page1" label="Page One" />
-        <q-route-tab to="/page2" label="Page Two" />
-        <q-route-tab to="/page3" label="Page Three" />
+        <q-route-tab to="/register" label="Register" />
+        <q-route-tab to="/login" label="Login" />
+        <q-route-tab to="/category" label="Category" />
+        <q-route-tab to="/post" label="Post" />
       </q-tabs>
     </q-header>
 
@@ -32,13 +32,12 @@
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
+            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
           </q-avatar>
           <div>Title</div>
         </q-toolbar-title>
       </q-toolbar>
     </q-footer>
-
   </q-layout>
 </template>
 
@@ -46,15 +45,15 @@
 import { ref } from 'vue'
 
 export default {
-  setup () {
+  setup() {
     const rightDrawerOpen = ref(false)
 
     return {
       rightDrawerOpen,
-      toggleRightDrawer () {
+      toggleRightDrawer() {
         rightDrawerOpen.value = !rightDrawerOpen.value
-      }
+      },
     }
-  }
+  },
 }
 </script>

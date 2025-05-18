@@ -1,7 +1,8 @@
 <template>
   <q-page padding>
     <!-- content -->
-  </q-page>
+    <h5>Register Page</h5>
+</q-page>
 </template>
 
 <script setup>
