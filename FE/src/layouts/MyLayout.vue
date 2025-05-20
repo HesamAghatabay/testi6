@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="hHr lpR fFr">
+  <q-layout view="hHh lpR fFf">
     <q-header elevated class="bg-primary text-white" height-hint="98">
       <q-toolbar>
         <q-toolbar-title>
@@ -46,7 +46,7 @@ import { ref } from 'vue'
 
 export default {
   setup() {
-    const rightDrawerOpen = ref(false)
+    const rightDrawerOpen = ref(true)
 
     return {
       rightDrawerOpen,
