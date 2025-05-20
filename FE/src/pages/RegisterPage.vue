@@ -40,6 +40,13 @@ const router = useRouter()
 
 function register() {
   if (!name.value || !phone.value || !email.value || !password.value || !confirmpassword.value) {
+    if (password.value != confirmpassword.value) {
+      Notify.create({
+        position: 'top',
+        message: 'password != confirmPassword',
+        color: 'negative',
+      })
+    }
     Notify.create({
       position: 'top',
       message: 'please fulling all parametrs!',
