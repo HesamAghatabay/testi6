@@ -10,9 +10,22 @@
         <q-input outlined v-model="password" label="Password" />
       </div>
     </div>
+          <q-btn color="deep-orange" glossy label="Login" @click="login" />
   </q-page>
 </template>
 
 <script setup>
-//
+import { ref } from 'node:process';
+import { api } from 'src/boot/axios';
+
+
+
+const phone = ref('')
+const password = ref('')
+
+function login(){
+  api.post('api/login',)
+}
+
+
 </script>
